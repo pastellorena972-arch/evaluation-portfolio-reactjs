@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Carnet Gourmand</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div class="logo">🍲</div>
+        <div>
+          <h1>Le Carnet Gourmand</h1>
+          <p class="subtitle">Avis des lecteurs</p>
+        </div> 
+    </header>
+
+    <main class="main">
+      <!-- COLONNE GAUCHE : RECETTE-->
+      <section class="card">
+        <h2>Pâtes crémeuses au citron</h2>
+        <p class="subtitle">Laissez votre avis sur cette recette grâce au formulaire ci-contre.</p>
+        
+        <div class="recipe-zone">
+          <h3>Ingrédients</h3>
+            <ul>
+              <li>Pâtes</li>
+              <li>Crème</li>
+              <li>Citron</li>
+              <li>Parmesan</li>
+            </ul>
+
+          <h3>Préparation</h3>
+            <ol>
+              <li>Cuire les pâtes.</li>
+              <li>Mélanger la crème et le citron.</li>
+              <li>Ajouter le parmesan.</li>
+            </ol>
+        </div>
+      </section>
+
+      <!-- COLONNE DROITE : FORMULAIRE ET COMMENTAIRES -->
+      <section class="card">
+        <h3>Laisser un commentaire</h3>
+        <form id="comment-form">
+          <div class="form-group">
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" placeholder="Ex : Léa">
+            <small>Minimum 2 caractères</small>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Votre commentaire</label>
+            <textarea id="message" placeholder="Votre avis sur la recette..."></textarea>
+            <small>Minimum 10 caractères</small>
+          </div>
+          <button type="submit" class="button-publish">Publier</button>
+          <div id="error" class="error-message hidden"></div>
+        </form>
+
+        <h3 class="comment-title">Commentaires</h3>
+        <div id="comment-list">
+          <article class="comment
+          ">
+            <strong>Téo</strong>
+            <p>Superbe recette !</p>
+            <button class="button-delete">🗑️ Supprimer</button>
+          </article>
+          <article class="comment
+          ">
+            <strong>Léa</strong>
+            <p>Test de commentaire</p>
+            <button class="button-delete">🗑️ Supprimer</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">Devoir JavaScript — Frontend</footer>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
